@@ -1471,3 +1471,16 @@ kbd {
     transform: none;
   }
 }
+
+@media print {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .site-header,
+  .hero-bg,
+  .toast {
+    display: none !important;
+  }
+}
