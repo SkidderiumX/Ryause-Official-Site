@@ -27,8 +27,8 @@ Opening `index.html` from disk works, but the profile list needs HTTP (the brows
 `fetch` for `file://` URLs). Serve the folder instead:
 
 ```powershell
-python -m http.server 8000
-# then open http://localhost:8000
+python -m http.server 3000
+# then open http://localhost:3000
 ```
 
 Any static server works. There is nothing to compile.
