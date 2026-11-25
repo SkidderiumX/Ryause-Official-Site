@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Ryause</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#080b11">
+  <style>
+    :root {
+      --bg: #070a10;
+      --text: #e9effa;
+      --muted: #94a3b8;
+      --line: rgba(148, 178, 220, 0.14);
+      --font: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+      --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(ellipse 70% 60% at 70% 0%, rgba(24, 154, 255, 0.16), transparent 60%),
+        radial-gradient(ellipse 60% 50% at 10% 40%, rgba(124, 92, 255, 0.12), transparent 60%),
+        var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      text-align: center;
+    }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 54px;
+      height: 54px;
+      margin: 0 auto 28px;
+      border-radius: 15px;
+      background: linear-gradient(145deg, #1c9cff, #4f6bff 55%, #7c5cff);
+      color: #fff;
+      font-size: 1.6rem;
+      font-weight: 800;
+      box-shadow: 0 10px 30px rgba(36, 120, 255, 0.35);
+    }
+    .code {
+      margin: 0;
+      font-family: var(--mono);
+      font-size: clamp(4rem, 16vw, 8rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.06em;
+      background: linear-gradient(120deg, #5cc2ff, #3d8bff 45%, #9a7bff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    h1 {
+      margin: 12px 0 0;
+      font-size: clamp(1.3rem, 4vw, 1.7rem);
+      letter-spacing: -0.03em;
+    }
+    p {
+      max-width: 44ch;
+      margin: 14px auto 30px;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    a {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #189aff, #3f7bff 55%, #7c5cff);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(24, 122, 255, 0.32);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+    a:hover { transform: translateY(-1px); box-shadow: 0 14px 40px rgba(24, 122, 255, 0.45); }
+    a:focus-visible { outline: 2px solid #7cc4ff; outline-offset: 3px; }
+    footer {
+      margin-top: 48px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: #64748b;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true">R</div>
+    <p class="code">404</p>
+    <h1>This page moved on.</h1>
+    <p>The link is broken or the page never existed. Head back to the client page — the profile list and download steps are there.</p>
+    <a href="https://skidderiumx.github.io/Ryause-Official-Site/">Back to Ryause</a>
+    <footer>Ryause b1 · Not affiliated with Mojang Studios or Microsoft.</footer>
+  </main>
+</body>
+</html>
