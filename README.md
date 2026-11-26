@@ -16,10 +16,8 @@ index.html              landing page
 robots.txt
 assets/
     favicon.svg
-    css/style.css       design tokens and all site styles
-    css/tour.css        scoped .u247 client-tour card
+    css/style.css       design tokens and all styles
     js/site.js          profile loading, navigation, copy buttons
-    js/tour.js          scroll-to-fill client-tour behaviour
     img/gui.png         ClickGUI screenshot
 ```
 
@@ -54,34 +52,12 @@ var BRANCH = "main";
 To add or edit a profile, change the profile repository — this site picks it up on the next
 load. Nothing here needs to be redeployed.
 
-## Client tour card
-
-The `#features` section opens with the scroll-to-fill “Client tour” card (`.u247`), placed
-between the section heading and the feature grid. It is self-contained:
-
-- styles live in `assets/css/tour.css` and are scoped to `.u247`;
-- behaviour lives in `assets/js/tour.js`;
-- the card is 300 × 480 px and scrolls its own content;
-- the video grows from 186 × 132 to 276 × 228 over the first 260 px of that scroll;
-- at 92 % of the range it switches to playing, the caption rises, and the 92-second
-  progress bar starts;
-- scrolling back up pauses it and shrinks the video again.
-
-The scroll area is a real focusable region, so keyboard users can Tab to it and use the
-arrow keys, Page Up/Down, Home and End. With `prefers-reduced-motion: reduce`, the video,
-caption and status still change, but the background drift and progress animation stop.
-The theme is dark-only, so the `.u247` tokens map to the site's existing dark variables.
-
-The poster is the real ClickGUI screenshot at `assets/img/gui.png`. Replace it with a video
-still if one is recorded; the component keeps the same motion values.
-
 ## Editing
 
 | What | Where |
 | --- | --- |
 | Copy, sections, FAQ | `index.html` |
 | Colours, spacing, typography | `:root` in `assets/css/style.css` |
-| Client tour card | `assets/css/tour.css`, `assets/js/tour.js` |
 | Profile repository, refresh behaviour | `assets/js/site.js` |
 | Client download link | `#download` in `index.html` |
 | Screenshot | `assets/img/gui.png` |
